@@ -30,6 +30,7 @@ Install the following dependencies in the listed order. Ensure shaka-packager is
 3. [mediainfo], mediainfo.exe same path or environment
 
 ### Steps
+
 - Edit BOTCONFIG.py Add Your Credentials And Paths
 - Install Requirements : `python -m pip install -r requirements.txt`
 - Add Needed Files to Path : rclone.exe - mediainfo.exe - rclone.config
@@ -38,3 +39,20 @@ Install the following dependencies in the listed order. Ensure shaka-packager is
 - Run Bot `python BPBBCODE.py`
 - Open Telegram Send `/movie Foldername` or `/tv foldername`
 
+## Working
+
+- Suppose your full path is : `TEAM DRIVE/BOT/MOVIES/DUNE.2021.mkv`
+  BOT is your remote folder (folder u configured remote or root folder) 
+  And Your Remote name is : `Arthur`
+  And If you want to fetch bbcode -
+     * Mount `Arthur:BOT`
+     * And You need to write : `Arthur:BOT/` in BOTCONFIG.py : `REMOTE_NAME = "Arthur:BOT/"`
+     * And When You use command in bot Use : `/movie MOVIES`
+           So it loops in `S:/MOVIES/` for MKV/MP4/AVI files
+     * If you Are Trying TVSHOW, You must add season folder in command folder
+           That is : `TEAM DRIVE/BOT/TVSHOWS/VIGIL.S01/Vigil.S01E01.mkv`
+                     `TEAM DRIVE/BOT/TVSHOWS/VIGIL.S01/Vigil.S01E02.mkv`
+           And You Request : `/tv TVSHOWS` so that it picks season folder link and size.It only picks First episode for mediainfo,Rest of the episodes got skipped for mediainfo.So Unless there is `E01` its skips..
+
+## Issues
+- Working must be trickier for you,But if you have any issues just add, I will fix it..
