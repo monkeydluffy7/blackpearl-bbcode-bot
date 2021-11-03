@@ -23,7 +23,7 @@ Simple Telegram Bot for generating BlackPearl BBCode Templates Written in Pyrogr
 
 ### Requirements
 
-Install the following dependencies in the listed order. Ensure shaka-packager is added to the environment path.
+Install the following dependencies in the listed order. Ensure Everything is added to the environment path.
 
 1. [python], 3.6.0 or newer
 2. [rclone], rclone.exe and rclone.config in same path or needed to be added in environment path
