@@ -34,7 +34,8 @@ Install the following dependencies in the listed order. Ensure Everything is add
 - Edit BOTCONFIG.py Add Your Credentials And Paths
 - Install Requirements : `python -m pip install -r requirements.txt`
 - Add Needed Files to Path : rclone.exe - mediainfo.exe - rclone.config
-- Mount Your Drive using rclone : `rclone mount remote:foldername --vfs-cache-mode full s:' 
+- Mount Your Drive using rclone : `rclone mount remote:foldername --vfs-cache-mode full s:`
+ 
   Note : Make Sure U mounted the remote:folder mentioned in config file, You can change `s:` to your mounted drive name (not rclone name)
 - Run Bot `python BPBBCODE.py`
 - Open Telegram Send `/movie Foldername` or `/tv foldername`
